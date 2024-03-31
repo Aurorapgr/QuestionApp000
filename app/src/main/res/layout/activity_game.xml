@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bege"
+    tools:context=".Game">
+    <TextView
+        android:id="@+id/titleQuiz"
+        android:layout_width="111dp"
+        android:layout_height="67dp"
+        android:text="QUIZ DA FAMÍLIA"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#00A858"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/cardback"
+        android:layout_width="247dp"
+        android:layout_height="246dp"
+        android:background="@drawable/card_front"
+        android:gravity="center"
+        android:text=""
+        android:alpha="0"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519" />
+    <TextView
+        android:id="@+id/cardfront"
+        android:layout_width="247dp"
+        android:layout_height="246dp"
+        android:background="@drawable/card_back"
+        android:gravity="center"
+        android:text="?"
+        android:textColor="@color/black"
+        android:textSize="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/flip"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btn_selector"
+        android:gravity="center"
+        android:text="Continuar "
+        android:textColor="#000000"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/end"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btn_selector"
+        android:gravity="center"
+        android:text="Encerrar perguntas do dia"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
