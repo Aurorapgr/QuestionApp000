@@ -40,13 +40,13 @@ class MainActivity : AppCompatActivity() {
         fun toRules(){
             Handler(Looper.getMainLooper()).postDelayed({
                 startActivity(Intent(this,rules::class.java))
-                finish()
+
             },800)
         }
         fun toCreators(){
             Handler(Looper.getMainLooper()).postDelayed({
                 startActivity(Intent(this,credits::class.java))
-                finish()
+
             },800)
         }
 
