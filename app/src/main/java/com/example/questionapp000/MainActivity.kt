@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         fun toPlay(){
             Handler(Looper.getMainLooper()).postDelayed({
                 startActivity(Intent(this,Game::class.java))
-                finish()
+               
             },800)
         }
         fun toRules(){
@@ -53,18 +53,14 @@ class MainActivity : AppCompatActivity() {
 
         binding.play.setOnClickListener {
 
-            anim.setTarget(binding.root)
-            anim.start()
             toPlay()
            }
         binding.htp.setOnClickListener {
-            anim.setTarget(binding.root)
-            anim.start()
+
             toRules()
         }
         binding.credits.setOnClickListener {
-            anim.setTarget(binding.root)
-            anim.start()
+
             toCreators()
         }
     }

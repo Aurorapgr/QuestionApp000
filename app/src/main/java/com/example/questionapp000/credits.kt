@@ -31,8 +31,7 @@ class credits : AppCompatActivity() {
             }, 800)
         }
         binding.play.setOnClickListener {
-            anim.setTarget(binding.root)
-            anim.start()
+
             toPlay()
         }
     }

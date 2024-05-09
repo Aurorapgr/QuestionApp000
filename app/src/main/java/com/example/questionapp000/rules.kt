@@ -28,8 +28,7 @@ class rules : AppCompatActivity() {
         }
         setContentView(binding.root)
         binding.btn.setOnClickListener{
-            anim.setTarget(binding.root)
-            anim.start()
+
             closer()
         }
     }
