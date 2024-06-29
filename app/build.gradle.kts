@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    namespace = "com.example.questionapp000"
+    namespace = "com.recontar.questionapp000"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.questionapp000"
+        applicationId = "com.recontar.questionapp000"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
